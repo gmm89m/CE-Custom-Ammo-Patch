@@ -9,7 +9,7 @@ In addition to that, it patches early mentioned materials and powderload effects
 
 # How to install 
 1.Download original mod https://steamcommunity.com/sharedfiles/filedetails/?id=3614768269&searchtext= \
-2.Download patch and put it into mod folder.
+2.Download CE Custom Ammo patch and put it into mod folder.
 
 # Things to know and be aware of
 If you were using your custom ammo it may affect your save, in a bad way obviously, so don't try to delete ammo you made and used, and of course do not uninstall mod mid-game.\
