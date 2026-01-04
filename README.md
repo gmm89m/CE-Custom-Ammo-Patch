@@ -8,7 +8,7 @@ Firstly, it replaces the FMJ with AP when avalaible, this makes AP a point to st
 In addition to that, it patches early mentioned materials and powderload effects.
 
 # How to install 
-1.Download original mod https://steamcommunity.com/sharedfiles/filedetails/?id=3614768269&searchtext=\
+1.Download original mod https://steamcommunity.com/sharedfiles/filedetails/?id=3614768269&searchtext= \
 2.Download patch and put it into mod folder.
 
 # Things to know and be aware of
