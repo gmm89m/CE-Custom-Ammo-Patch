@@ -1,0 +1,52 @@
+<Patch>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/CustomLoads.BulletMaterialDef[defName="BulletMat_Uranium"]</xpath>
+    <value>
+
+    <CustomLoads.BulletMaterialDef ParentName="BaseBulletMaterial">
+    <defName>BulletMat_Uranium</defName>
+    <material>Uranium</material>
+    <!-- <label>depleted uranium</label> -->
+    <tint>(0.266, 0.58, 0.435, 1.0)</tint>
+    <costPerBullet>0.015</costPerBullet>
+    <mods>
+      <li>
+        <parts>BulletCore</parts>
+        <desc>The heavy uranium core increases the impact of the projectile, but makes it slower and less accurate.</desc>
+        <speed>x0.75</speed>
+        <spread>+0.1</spread>
+		<apSharp>x1.25 +1</apSharp>
+        <apBlunt>x1.25 +1</apBlunt>
+        <damage>+4</damage>
+      </li>
+      <li>
+        <parts>BulletJacket</parts>
+        <desc>A heavy uranium jacket adds mass to the bullet, increasing damage but greatly impacting it's ability to defeat armor due to deformation.</desc>
+        <damage>x1.25 +2</damage>
+        <apSharp>x0.7 -1</apSharp>
+		<apBlunt>x1.2 +1</apBlunt>
+      </li>
+      <li>
+        <parts>BulletTip</parts>
+        <desc>The dense uranium tip massively increases armor penetration, but adds a lot of recoil when fired.</desc>
+        <apSharp>x1.5 +3</apSharp>
+        <apBlunt>x1.15 +1</apBlunt>
+		<speed>x0.75</speed>
+        <recoil>x1.35</recoil>
+      </li>
+      <li>
+        <parts>Casing</parts>
+        <desc>Uranium is an unconventional choice of material for the cartridge casing.\nThe increased mass greatly lowers the rate of fire, but this makes the weapon a lot more controllable.</desc>
+        <rateOfFire>x0.5</rateOfFire>
+        <recoil>x0.2</recoil>
+        <spread>x0.5</spread>
+        <mass>x1.5</mass>
+      </li>
+    </mods>
+  </CustomLoads.BulletMaterialDef>
+
+    </value>
+  </Operation>
+
+</Patch>

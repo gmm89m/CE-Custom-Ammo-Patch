@@ -1,0 +1,57 @@
+<Patch>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/CustomLoads.BulletMaterialDef[defName="BulletMat_Plasteel"]</xpath>
+    <value>
+
+    <CustomLoads.BulletMaterialDef ParentName="BaseBulletMaterial">
+    <defName>BulletMat_Plasteel</defName>
+    <material>Plasteel</material>
+    <costPerBullet>0.015</costPerBullet> <!-- 5 for 500 bullets -->
+    <mods>
+      <li>
+        <parts>BulletCore</parts>
+        <desc>A lightweight plasteel penetrating core increases muzzle velocity but the reduced mass comes at the cost of damage.</desc>
+        <!-- +20% speed, -20% spread -->
+        <speed>x1.2</speed>
+        <spread>x0.8</spread>
+        <mass>x0.9</mass>
+		<apSharp>x1.2</apSharp>
+        <apBlunt>x0.9</apBlunt>
+		<damage>x0.9</damage>
+        <!-- -2 damage -->
+        <damage>-2</damage>
+      </li>
+      <li>
+        <parts>BulletJacket</parts>
+        <desc>The plasteel armor-piercing cap is effective against thin armor, but can cause overpenetration and loss of damage.</desc>
+        <!-- +4 RHA, +1 MPa -->
+        <apSharp>+4</apSharp>
+        <apBlunt>-2</apBlunt>
+        <!-- -2 damage -->
+        <damage>x0.9 -2</damage>
+      </li>
+      <li>
+        <parts>BulletTip</parts>
+        <desc>Plasteel makes an excellent material for the tip of the projectile, greatly increasing armor penetration capabilities.</desc>
+        <!-- +45% and +4 armor pen -->
+        <apSharp>x1.45</apSharp>
+        <apBlunt>x0.9</apBlunt>
+		<damage>x0.6</damage>
+      </li>
+      <li>
+        <parts>Casing</parts>
+        <desc>Lightweight plasteel used in the cartridge casing allows the weapon to cycle faster, but this also makes it less controllable.</desc>
+        <!-- More recoil, more spread, more rate of fire -->
+        <rateOfFire>x1.2</rateOfFire>
+        <recoil>x1.1</recoil>
+        <mass>x0.75</mass>
+        <spread>+0.02</spread> <!-- Flat increase is generally better for spread because default spread values are so low -->
+      </li>
+    </mods>
+  </CustomLoads.BulletMaterialDef>
+
+    </value>
+  </Operation>
+
+</Patch>

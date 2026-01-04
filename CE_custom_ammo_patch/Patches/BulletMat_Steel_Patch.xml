@@ -1,0 +1,75 @@
+<Patch>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/CustomLoads.BulletMaterialDef[defName="BulletMat_Steel"]</xpath>
+    <value>
+
+      <CustomLoads.BulletMaterialDef ParentName="BaseBulletMaterial">
+        <defName>BulletMat_Steel</defName>
+
+        <material>Steel</material>
+        <costPerBullet>0.02</costPerBullet>
+
+        <mods>
+
+          <!-- Bullet core -->
+          <li>
+            <parts>BulletCore</parts>
+            <desc>
+              The steel penetrating core slightly decreases muzzle velocity but increased
+              mass and density makes it balanced in terms of damage and penetration.
+            </desc>
+
+            <speed>x0.9</speed>
+            <spread>x1.05</spread>
+            <apSharp>x1.1</apSharp>
+            <apBlunt>x1.1</apBlunt>
+            <mass>x1.2</mass>
+            <damage>+2</damage>
+          </li>
+
+          <!-- Armor-piercing cap -->
+          <li>
+            <parts>BulletJacket</parts>
+            <desc>
+              The steel armor-piercing cap is effective against light and medium armor,
+              but can be stopped by dense and heavy armor.
+            </desc>
+
+            <apSharp>+1</apSharp>
+            <apBlunt>+1</apBlunt>
+            <mass>x1.1</mass>
+            <damage>+2</damage>
+          </li>
+
+          <!-- Bullet tip -->
+          <li>
+            <parts>BulletTip</parts>
+            <desc>
+              Steel is a balanced material for the tip of the projectile, slightly
+              increasing armor penetration capabilities.
+            </desc>
+
+            <apSharp>x1.15</apSharp>
+          </li>
+
+          <!-- Casing -->
+          <li>
+            <parts>Casing</parts>
+            <desc>
+              Steel is heavier than brass, so it's not as good for casings as other materials.
+            </desc>
+
+            <rateOfFire>x0.8</rateOfFire>
+            <recoil>x0.8</recoil>
+            <mass>x1.2</mass>
+            <spread>-0.1</spread>
+          </li>
+
+        </mods>
+      </CustomLoads.BulletMaterialDef>
+
+    </value>
+  </Operation>
+
+</Patch>

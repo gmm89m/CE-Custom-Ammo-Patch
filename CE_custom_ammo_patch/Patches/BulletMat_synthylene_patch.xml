@@ -1,0 +1,50 @@
+<Patch>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/CustomLoads.BulletMaterialDef[defName="BulletMat_Synthylene"]</xpath>
+    <value>
+
+    <CustomLoads.BulletMaterialDef ParentName="BaseBulletMaterial" MayRequire="Dubwise.Rimefeller">
+    <defName>BulletMat_Synthylene</defName>
+    <material>Synthylene</material>
+    <costPerBullet>0.06</costPerBullet> <!-- 30 for 500 bullets -->
+    <mods>
+	<li>
+        <parts>BulletCore</parts>
+        <desc>The light Synthylene core increases the impact of the projectile, but makes it slower and less accurate.</desc>
+        <speed>x0.7</speed>
+        <spread>+0.1</spread>
+        <damage>x1.3 +4</damage>
+		<apSharp>x0.8</apSharp>
+		<apBlunt>+3</apBlunt>
+      </li>
+      <li>
+        <parts>BulletJacket</parts>
+        <desc>A Synthylene jacket is very light and soft which makes it loose speed faster, but it delivers significant damage.</desc>
+        <damage>x1.3 +2</damage>
+        <spread>+0.2</spread>
+        <speed>x0.8</speed>
+        <apSharp>x0.8</apSharp>
+		<apBlunt>+1</apBlunt>
+      </li>
+      <li>
+        <parts>BulletTip</parts>
+        <desc>The soft and light Synthylene tip severely decreases armor penetration and accuracy, delivers significant damage, only effective agains unarmored targets.</desc>
+        <damage>x1.6</damage>
+		<apSharp>x0.6</apSharp>
+		<apBlunt>+3</apBlunt>
+      </li>
+      <li>
+        <parts>Casing</parts>
+        <desc>The Synthylene casing is extremely light, but unreliadble.</desc>
+        <rateOfFire>x1.15</rateOfFire>
+		<spread>+0.05</spread>
+        <mass>x0.4</mass>
+      </li>
+    </mods>
+  </CustomLoads.BulletMaterialDef>
+
+    </value>
+  </Operation>
+
+</Patch>
