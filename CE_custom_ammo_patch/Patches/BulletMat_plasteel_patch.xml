@@ -7,7 +7,7 @@
     <CustomLoads.BulletMaterialDef ParentName="BaseBulletMaterial">
     <defName>BulletMat_Plasteel</defName>
     <material>Plasteel</material>
-    <costPerBullet>0.015</costPerBullet> <!-- 5 for 500 bullets -->
+    <costPerBullet>0.005</costPerBullet> 
     <mods>
       <li>
         <parts>BulletCore</parts>
@@ -53,5 +53,6 @@
 
     </value>
   </Operation>
+
 
 </Patch>
