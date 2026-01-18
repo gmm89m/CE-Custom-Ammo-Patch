@@ -22,4 +22,5 @@ And the last thing - I may drop this project, if it gets boring, so do not expec
 2. Some stuff for DMS, because I like it. \
 3. Ability to create new types of large calibers and explosives. (Configuring the amount of HE, fragments, etc.)\
 4. Patching other materials. (Probably 1st thing to do)\
-5. New types of bullet parts, e.g. APFSDS, APDS etc; This could be made to introduce different stats for the same materials depending on a bullet tamplate, so each material could have 2+ .xml stat files that aplly to a specific bullet template.
+5. New types of bullet parts, e.g. APFSDS, APDS etc; This could be made to introduce different stats for the same materials depending on a bullet tamplate, so each material could have 2+ .xml stat files that aplly to a specific bullet template.\
+6. Fix the storage issue
