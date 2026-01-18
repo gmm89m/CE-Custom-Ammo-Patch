@@ -9,7 +9,7 @@
     <material>Uranium</material>
     <!-- <label>depleted uranium</label> -->
     <tint>(0.266, 0.58, 0.435, 1.0)</tint>
-    <costPerBullet>0.015</costPerBullet>
+    <costPerBullet>0.005</costPerBullet>
     <mods>
       <li>
         <parts>BulletCore</parts>
@@ -48,5 +48,6 @@
 
     </value>
   </Operation>
+
 
 </Patch>
