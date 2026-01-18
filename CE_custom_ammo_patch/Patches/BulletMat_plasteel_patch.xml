@@ -19,12 +19,12 @@
 		<apSharp>x1.2</apSharp>
         <apBlunt>x0.9</apBlunt>
 		<damage>x0.9</damage>
-        <!-- -2 damage -->
-        <damage>-2</damage>
+        <!-- -1 damage -->
+        <damage>-1</damage>
       </li>
       <li>
         <parts>BulletJacket</parts>
-        <desc>The plasteel armor-piercing cap is effective against thin armor, but can cause overpenetration and loss of damage.</desc>
+        <desc>The plasteel armor-piercing cap is effective against thick armor, but can cause overpenetration and loss of damage.</desc>
         <!-- +4 RHA, +1 MPa -->
         <apSharp>+4</apSharp>
         <apBlunt>-2</apBlunt>
@@ -37,7 +37,7 @@
         <!-- +45% and +4 armor pen -->
         <apSharp>x1.45</apSharp>
         <apBlunt>x0.9</apBlunt>
-		<damage>x0.6</damage>
+		<damage>x0.8</damage>
       </li>
       <li>
         <parts>Casing</parts>
@@ -56,3 +56,4 @@
 
 
 </Patch>
+
